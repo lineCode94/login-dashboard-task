@@ -97,7 +97,7 @@ function Login() {
             value={form.email}
             onChange={handleChange}
             error={errors.email}
-            placeholder="you@example.com"
+            placeholder="Email"
             autoComplete="email"
             iconSrc={smsIcon}
             iconAlt="email icon"
@@ -110,7 +110,7 @@ function Login() {
             value={form.password}
             onChange={handleChange}
             error={errors.password}
-            placeholder="Enter your password"
+            placeholder="Password"
             autoComplete="current-password"
             iconSrc={lockIcon}
             iconAlt="lock icon"

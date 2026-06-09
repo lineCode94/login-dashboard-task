@@ -16,6 +16,7 @@ function InputField({
   const inputClass = `${styles.input} ${error ? styles.inputError : ''} ${
     iconSrc ? styles.hasIcon : ''
   }`;
+  const inputPlaceholder = placeholder || label;
 
   return (
     <div className={styles.fieldGroup}>
@@ -34,7 +35,7 @@ function InputField({
           value={value}
           onChange={onChange}
           onBlur={onBlur}
-          placeholder={placeholder}
+          placeholder={inputPlaceholder}
           autoComplete={autoComplete}
           className={inputClass}
           aria-invalid={!!error}
