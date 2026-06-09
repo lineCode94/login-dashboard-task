@@ -1,0 +1,26 @@
+.appWrapper {
+  min-height: 100vh;
+}
+
+.loaderContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f0ff 0%, #f0e8ff 100%);
+}
+
+.loader {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 8px solid rgba(217, 70, 239, 0.18);
+  border-top-color: #d946ef;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

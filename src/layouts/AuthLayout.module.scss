@@ -1,0 +1,96 @@
+.pageContainer {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.formSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f5f0ff 0%, #f0e8ff 100%);
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 480px;
+}
+
+.brandingSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #e8b4f1 0%, #d084f1 50%, #b85ce0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.brandingContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.brandImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.2));
+}
+
+.brandLogo {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 1024px) {
+  .pageContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .brandingSection {
+    padding: 2rem;
+    min-height: 300px;
+  }
+
+  .brandImage {
+    max-width: 300px;
+  }
+
+  .brandLogo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .formSection {
+    padding: 2rem 1.5rem;
+  }
+
+  .formWrapper {
+    max-width: 100%;
+  }
+
+  .brandingSection {
+    padding: 1.5rem;
+    min-height: 250px;
+  }
+
+  .brandImage {
+    max-width: 250px;
+  }
+
+  .brandLogo {
+    font-size: 1.5rem;
+  }
+}

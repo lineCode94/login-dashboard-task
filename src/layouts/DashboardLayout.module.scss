@@ -1,0 +1,45 @@
+.dashboardShell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.sidebar {
+  padding: 3rem 2rem;
+  background: #3a4cf0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.sidebarText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+}
+
+.contentArea {
+  padding: 3rem;
+  background: #f7f8fc;
+}
+
+@media (max-width: 860px) {
+  .dashboardShell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .contentArea {
+    padding: 2rem;
+  }
+}
