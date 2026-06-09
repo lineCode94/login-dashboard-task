@@ -7,6 +7,8 @@ import AuthLayout from '../../layouts/AuthLayout.jsx';
 import InputField from '../../components/InputField.jsx';
 import Button from '../../components/Button.jsx';
 import styles from './Login.module.scss';
+import smsIcon from '../../assets/sms.png';
+import lockIcon from '../../assets/lock.png';
 
 const initialForm = {
   email: '',
@@ -97,6 +99,8 @@ function Login() {
             error={errors.email}
             placeholder="you@example.com"
             autoComplete="email"
+            iconSrc={smsIcon}
+            iconAlt="email icon"
           />
 
           <InputField
@@ -108,6 +112,8 @@ function Login() {
             error={errors.password}
             placeholder="Enter your password"
             autoComplete="current-password"
+            iconSrc={lockIcon}
+            iconAlt="lock icon"
           />
 
           {serverError && <p className={styles.serverError}>{serverError}</p>}
